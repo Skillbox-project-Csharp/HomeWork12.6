@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Brush x:Key="BackgroundDark">#1e1e1e</Brush>
+    <Brush x:Key="BackgroundLiteDark">#252526</Brush>
+    <Brush x:Key="BackgroundTextBlockDark">#1b1c20</Brush>
+    <Brush x:Key="FontDark">#FFFFFE</Brush>
+    <Brush x:Key="SecondFontDark">#ECEAE8</Brush>
+    <Brush x:Key="BackgroundDarkGray">#5c5c5c</Brush>
+    <ImageBrush x:Key="PlusIconGray" ImageSource="/Resources/Themes/PlusIconGray.png"/>
+</ResourceDictionary>

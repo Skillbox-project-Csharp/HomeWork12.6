@@ -1,0 +1,60 @@
+﻿<Window x:Class="HomeWork12._6.WindowaAdingNewClient"
+        xmlns:resx="clr-namespace:HomeWork12._6.Properties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeWork12._6"
+        mc:Ignorable="d"
+        Background="{DynamicResource BackgroundDark}"
+        WindowStartupLocation="CenterScreen"
+        Title="WindowaAdingNewClient" Height="450" Width="225">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel 
+                    Name="StackPanelFormData"
+                    Orientation="Vertical"
+                    Style="{DynamicResource ItemShowStyle}">
+
+                <TextBlock 
+                        Text="{x:Static resx:Resources.textName}"/>
+                <TextBox 
+                        x:Name="TextBoxNameClient" 
+                        Style="{DynamicResource InputTextBoxStyle}"/>
+
+                <TextBlock Text="{x:Static resx:Resources.textSurName}"/>
+                <TextBox 
+                        x:Name="TextBoxSurNameClient"
+                        Style="{DynamicResource InputTextBoxStyle}"/>
+
+                <TextBlock Text="{x:Static resx:Resources.textPatronymic}"/>
+                <TextBox 
+                        x:Name="TextBoxPatronymicClient"
+                        Style="{DynamicResource InputTextBoxStyle}"/>
+
+                <TextBlock Text="{x:Static resx:Resources.textPhoneNumber}"/>
+                <TextBox 
+                        x:Name="TextBoxPhoneNumberClient"
+                        Style="{DynamicResource InputTextBoxStyle}"/>
+
+                <TextBlock Text="{x:Static resx:Resources.textPussportSeriesNumber}"/>
+                <TextBox 
+                        x:Name="TextBoxPussportSeriesNumberClient"
+                        Style="{DynamicResource InputTextBoxStyle}"/>
+                <StackPanel Orientation="Horizontal" 
+                                HorizontalAlignment="Right">
+                    <Button x:Name="ButtonCancal"
+                                Style="{DynamicResource ButtonsClientInfo}"
+                                Content="Отмена"
+                                Click="ButtonCancal_Click"/>
+                    <Button 
+                            x:Name="ButtonСreate"
+                            Style="{DynamicResource ButtonsClientInfo}"
+                            Content="Создать"
+                            HorizontalAlignment="Right"
+                            Click="ButtonСreate_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
